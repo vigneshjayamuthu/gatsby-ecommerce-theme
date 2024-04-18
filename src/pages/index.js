@@ -50,7 +50,7 @@ const IndexPage = () => {
       j.async = true;
       j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
       h.parentNode.insertBefore(j, h);
-      })(window, document, "script", "https://gallabox-whatsapp-widget-git-feat-waw-eventhandling-gallabox.vercel.app");
+      })(window, document, "script", "https://waw.gallabox.dev");
   },[])
   return (
     <Layout disablePaddingBottom>
