@@ -24,7 +24,34 @@ const IndexPage = () => {
   const goToShop = () => {
     navigate('/shop');
   };
-
+  React.useEffect(() => {
+    (function (w, d, s, u) {
+      w.gbwawc = {
+      url: u,
+      options: {
+              waId: "+91 9988998899",
+              siteName: "EV",
+              siteTag: "Busy",
+              siteLogo: "https://assets.gallabox.com/gb-home/wa-chat-widget/bot+avatars/2.png",
+              widgetPosition: "RIGHT",
+              triggerMessage: "Chat with us!",
+              welcomeMessage: "Welcome",
+              brandColor: "#25D366",
+              messageText: "I am looking for",
+              replyOptions: ['',''],
+              version:"v2",
+              customQuestion:"I want to know about Gallabox",
+              startChatBtnTxt:"Chat with us",
+          },
+          onInteract: (data) => { console.log(data) }
+      };
+      var h = d.getElementsByTagName(s)[0],
+      j = d.createElement(s);
+      j.async = true;
+      j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+      h.parentNode.insertBefore(j, h);
+      })(window, document, "script", "https://gallabox-whatsapp-widget-git-feat-waw-eventhandling-gallabox.vercel.app");
+  },[])
   return (
     <Layout disablePaddingBottom>
       {/* Hero Container */}
