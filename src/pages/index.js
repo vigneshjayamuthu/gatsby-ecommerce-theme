@@ -25,7 +25,18 @@ const IndexPage = () => {
     navigate('/shop');
   };
   React.useEffect(() => {
-
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaHR0cHM6Ly9mcmllbmRseS1tZWxiYS0wYjhjMzIubmV0bGlmeS5hcHAvIiwiaWQiOiI2NjIxZTk2YWI0MTM5MTAzNDAyYzZkNWYiLCJhY2NJZCI6IjY0NDkxMDRhMGE3NDc3OGQyOTJmMjU1YSIsImlhdCI6MTcxMzQ5ODQ3NH0.2w7fUVAQTFmR18G2hHy5k8apKd9ClGp8icksM2RxGi0";
+    (function(w, d, s, u, t) {
+      w.Chatty = function(c) { w.Chatty._.push(c) };
+      w.Chatty._ = [];
+      w.Chatty.url = u;
+      w.Chatty.hash = t;
+      var h = d.getElementsByTagName(s)[0],
+        j = d.createElement(s);
+      j.async = true;
+      j.src = 'https://widget.gallabox.com/chatty-widget.min.js?_=' + Math.random();
+      h.parentNode.insertBefore(j, h);
+    })(window, document, 'script', 'https://widget.gallabox.com', token);
 
     (function (w, d, s, u) {
       w.gbwawc = {
@@ -35,7 +46,7 @@ const IndexPage = () => {
               siteName: "EV",
               siteTag: "Busy",
               siteLogo: "https://assets.gallabox.com/gb-home/wa-chat-widget/bot+avatars/2.png",
-              widgetPosition: "RIGHT",
+              widgetPosition: "LEFT",
               triggerMessage: "Chat with us!",
               welcomeMessage: "Welcome",
               brandColor: "#25D366",
