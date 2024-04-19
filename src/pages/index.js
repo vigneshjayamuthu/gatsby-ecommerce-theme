@@ -41,7 +41,7 @@ const IndexPage = () => {
   },[])
 
   React.useEffect(() => {
-
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaHR0cHM6Ly9mcmllbmRseS1tZWxiYS0wYjhjMzIubmV0bGlmeS5hcHAvIiwiaWQiOiI2NjIxZTk2YWI0MTM5MTAzNDAyYzZkNWYiLCJhY2NJZCI6IjY0NDkxMDRhMGE3NDc3OGQyOTJmMjU1YSIsImlhdCI6MTcxMzQ5ODQ3NH0.2w7fUVAQTFmR18G2hHy5k8apKd9ClGp8icksM2RxGi0";
     (function (w, d, s, u) {
       w.gbwawc = {
       url: u,
