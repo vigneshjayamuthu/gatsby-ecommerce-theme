@@ -38,7 +38,7 @@ const IndexPage = () => {
       j.src = 'https://widget.gallabox.com/chatty-widget.min.js?_=' + Math.random();
       h.parentNode.insertBefore(j, h);
     })(window, document, 'script', 'https://widget.gallabox.com', token);
-  }
+  },[])
 
   React.useEffect(() => {
 
