@@ -25,6 +25,8 @@ const IndexPage = () => {
     navigate('/shop');
   };
   React.useEffect(() => {
+
+
     (function (w, d, s, u) {
       w.gbwawc = {
       url: u,
@@ -50,7 +52,10 @@ const IndexPage = () => {
       j.async = true;
       j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
       h.parentNode.insertBefore(j, h);
-      })(window, document, "script", "https://waw.gallabox.dev");
+      })(window, document, "script", "https://waw.gallabox.com");
+
+
+
   },[])
   return (
     <Layout disablePaddingBottom>
