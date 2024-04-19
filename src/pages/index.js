@@ -25,7 +25,7 @@ const IndexPage = () => {
     navigate('/shop');
   };
 
-  React.useEffect(() => {<script>
+  React.useEffect(() => {
     const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaHR0cHM6Ly9mcmllbmRseS1tZWxiYS0wYjhjMzIubmV0bGlmeS5hcHAvIiwiaWQiOiI2NjIxZTk2YWI0MTM5MTAzNDAyYzZkNWYiLCJhY2NJZCI6IjY0NDkxMDRhMGE3NDc3OGQyOTJmMjU1YSIsImlhdCI6MTcxMzQ5ODQ3NH0.2w7fUVAQTFmR18G2hHy5k8apKd9ClGp8icksM2RxGi0";
     (function(w, d, s, u, t) {
       w.Chatty = function(c) { w.Chatty._.push(c) };
@@ -38,7 +38,7 @@ const IndexPage = () => {
       j.src = 'https://widget.gallabox.com/chatty-widget.min.js?_=' + Math.random();
       h.parentNode.insertBefore(j, h);
     })(window, document, 'script', 'https://widget.gallabox.com', token);
-  </script>}
+  }
 
   React.useEffect(() => {
 
