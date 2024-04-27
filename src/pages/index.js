@@ -51,7 +51,7 @@ const IndexPage = () => {
       j.async = true;
       j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
       h.parentNode.insertBefore(j, h);
-      })(window, document, "script", "https://app.gallabox.com");
+      })(window, document, "script", "https://waw.gallabox.com/");
 //new
 
 
